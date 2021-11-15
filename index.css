@@ -1,93 +1,108 @@
 body {
-	font-family: 'Gugi', cursive;
-	font-size: 2rem;
+    font-family: 'Gugi', cursive;
 }
+
 header .carousel-inner .item {
-	height: 100vh;
+    height: 100%;
 }
+
 .navbar-inverse {
-	background-color: transparent;
-	border-color: transparent;
+    background-color: transparent;
+    border-color: transparent;
 }
+
 .navbar-inverse .navbar-brand {
-	color: #fff;
-	font-size: 5rem;
-	padding: 40px 15px;
-	font-weight: 900;
+    color: #fff;
+    font-size: 4rem;
+    padding: 40px 15px;
+    font-weight: 900;
 }
+
 .nav.navbar-nav.navbar-right {
-	margin: 25px 0;
+    margin: 25px 0;
 }
+
 .navbar-inverse .navbar-nav>li>a {
-	color: #fff;
-	text-transform: uppercase;
+    color: #fff;
+    text-transform: uppercase;
 }
+
 .banner {
-	-webkit-background-size: cover;
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
+
 .carousel-caption {
-	padding-bottom: 250px;
-	font-family: poppins;
+    padding-bottom: 250px;
+    font-family: poppins;
 }
+
 .carousel-caption h2 {
-	font-size: 70px;
-	text-transform: uppercase;
-	font-weight: bold;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
+
 .carousel-caption h2 span {
-	color: #EDBB00;
+    color: #EDBB00;
 }
+
 .carousel-caption a {
-	background: #EDBB00;
-	padding: 15px 35px;
-	display: inline-block;
-	margin-top: 15px;
-	color: #fff;
-	text-transform: uppercase;
-	border-radius: 25px;
+    background: #EDBB00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 25px;
 }
+
 .carousel-control.right {
-	background-image: none;
+    background-image: none;
 }
+
 .carousel-control.left {
-	background-image: none;
+    background-image: none;
 }
+
 .carousel-indicators .active {
-	background-color: #EDBB00;
-	border-color: #EDBB00;
+    background-color: #EDBB00;
+    border-color: #EDBB00;
 }
+
+
 /*responsive css*/
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	.carousel-caption {
-		padding-bottom: 350px;
-	}
-	.carousel-caption h2 {
-		font-size: 50px;
-	}
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
 }
+
 @media only screen and (max-width: 767px) {
-	.navbar-inverse .navbar-brand {
-		font-size: 30px;
-		padding: 20px 15px;
-	}
-	.navbar-collapse {
-		background: rgba(0, 0, 0, 0.5);
-	}
-	.carousel-caption {
-		padding-bottom: 120px;
-	}
-	.carousel-caption h2 {
-		font-size: 25px;
-	}
-	.carousel-caption h3 {
-		font-size: 18px;
-	}
-	.carousel-caption a {
-		padding: 10px 25px;
-	}
+    .navbar-inverse .navbar-brand {
+        font-size: 30px;
+        padding: 20px 15px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-caption {
+        padding-bottom: 120px;
+    }
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
 }
