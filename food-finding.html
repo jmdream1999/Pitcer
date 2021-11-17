@@ -3,11 +3,13 @@
 <html>
 
 <head>
-    <link rel="shortcut icon" href="https://pitcer.com/favicon.ico" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6322085571960400" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://pitcer.com/food-findingfavicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T3BZK61N3"></script>
+
+
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -26,17 +28,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link href="https://fonts.googleapis.com/css?family=Jua&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <title>음식 검색기</title>
-    <meta name="title" content="음식 검색기" />
+    <title>Food Finding</title>
+    <meta name="title" content="Food Finding" />
     <meta name="author" content="sunhole" />
     <link rel="stylesheet" href="food-finding.css" />
-    <link rel="canonical" href="https://pitcer.com/" />
-    <meta property="og:url" content="https://pitcer.com/" />
+    <link rel="canonical" href="https://pitcer.com/food-finding" />
+    <meta property="og:url" content="https://pitcer.com/food-finding" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="음식 검색기" />
-    <meta name="description" content="전세계 음식을 찾아드립니다" />
-    <meta property="og:description" content="전세계 음식을 찾아드립니다" />
-    <meta property="og:image" content="전세계 음식을 찾아드립니다" />
+    <meta property="og:title" content="Food Finding" />
+    <meta name="description" content="We're going to find food from all over the world" />
+    <meta property="og:description" content="We're going to find food from all over the world" />
+    <meta property="og:image" content="We're going to find food from all over the world" />
 
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5e64b3727e862b06"></script>
     <meta http-equiv="origin-trial" content="AxujKG9INjsZ8/gUq8+dTruNvk7RjZQ1oFhhgQbcTJKDnZfbzSTE81wvC2Hzaf3TW4avA76LTZEMdiedF1vIbA4AAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2NTI3NzQ0MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="
@@ -79,28 +81,23 @@
 
     <body>
         <header class="header">
-            <h1 class="text">Pitcer</h1>
+            <a class="navbar-brand" href="https://pitcer.com/">Pitcer</a>
+            </div>
             <ul class="nav">
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Sign In</a></li>
-                <li><a href="#">Free Trial</a></li>
+                <li><a href="https://pitcer.com/">Home</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="https://pitcer.com/lang">Language</a></li>
+                <li><a href="https://pitcer.com/blog" target=”_blank”>Develope story</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmdream1999@gmail.com" target=”_blank”>Contact</a></li>
             </ul>
         </header>
 
 
         <section class="section">
-            <h1 class="title">이 음식은 무엇일까요?</h1>
+            <h1 class="title">Food Finding</h1>
             <h2 class="subtitle">
-                전세계 음식을 찾아드립니다
-            </h2>
-            <h4 class="sr-only">
-                본 서비스는 Google의 인공지능 teachable machine 을 활용하였습니다.
-            </h4>
+                We're going to find food from all over the world</h2>
+
             <p class="sr-only"></p>
         </section>
 
@@ -164,11 +161,11 @@
                 <input class="file-upload-input" type="file" onchange="readURL(this);" accept="image/*" />
                 <div class="drag-text">
                     <!-- <img src="img/upload.svg" class="mt-5 pt-5 upload"> -->
-                    <h2 class="mb-5 pb-5 pt-4 upload-text" color=green>
-                        음식 사진을 올려주세요
+                    <h2 class="mb-5 pb-5 pt-4 upload-text">
+                        Please post a picture of the food
                     </h2>
                     <h6>
-                        ( 정면 사진이면 인식률이 높아집니다 )
+                        ( If it's the front photo, the recognition rate increases )
                     </h6>
                     <h3>
                         &nbsp;&nbsp;&nbsp;
@@ -176,447 +173,413 @@
                 </div>
             </div>
             <div class="file-upload-content">
-                <img class="file-upload-image" id="food-image" src="#" alt="your image" />
+                <img class="file-upload-image" id="dog-image" src="#" alt="your image" />
                 <p class="result-message"></p>
                 <div id="loading" class="animated bounce">
                     <div class="spinner-border" role="status">
-                        <span class="sr-only">로딩중...</span>
+                        <span class="sr-only">Loading...</span>
                     </div>
-                    <p class="text-center">음식을 찾는 중입니다...</p>
+                    <p class="text-center">Looking for food...</p>
                 </div>
 
                 <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-                <div id="addThis" class="addthis_inline_share_toolbox_6lz1" data-url="https://pitcer.com/" data-title="Food-finding" data-description="" style="clear: both;">
+                <div id="addThis" class="addthis_inline_share_toolbox_6lz1" data-url="https://foodseecher.netlify.app/" data-title="Food Seecher" data-description="" style="clear: both;">
                     <div id="atstbx" class="at-resp-share-element at-style-responsive addthis-smartlayers addthis-animated at4-show at-mobile" aria-labelledby="at-6c0c674e-e1ee-4a6c-8516-e6a1999eff18" role="region">
                         <span id="at-6c0c674e-e1ee-4a6c-8516-e6a1999eff18" class="at4-visually-hidden">AddThis Sharing Buttons</span
-							>
-							<div class="at-share-btn-elements">
-								<a
-									role="button"
-									tabindex="0"
-									class="at-icon-wrapper at-share-btn at-svc-kakao"
-									style="background-color: rgb(250, 185, 0); border-radius: 26px;"
-									><span class="at4-visually-hidden">Share to Kakao</span
-									><span
-										class="at-icon-wrapper"
-										style="line-height: 32px; height: 32px; width: 32px;"
-										><svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink"
-											viewBox="0 0 32 32"
-											version="1.1"
-											role="img"
-											aria-labelledby="at-svg-kakao-1"
-											class="at-icon at-icon-kakao"
-											style="
-												fill: rgb(255, 255, 255);
-												width: 32px;
-												height: 32px;
-											"
-										>
-											<title id="at-svg-kakao-1">Kakao</title>
-											<g>
-												<path
-													d="M20.826 6h-9.652C10.524 6 10 6.51 10 7.138v9.336c0 .63.525 1.14 1.174 1.14h4.45c-.03 1.11-.507 2.318-1.196 3.39-.775 1.207-2.426 2.543-2.44 2.555-.13.12-.226.26-.23.456 0 .15.08.263.167.385l3.104 3.395s.15.154.274.183c.14.033.3.037.41-.045 5.374-4.032 6.15-9.085 6.285-11.82V7.137C22 6.508 21.475 6 20.826 6"
-													fill-rule="evenodd"
-												></path>
-											</g></svg></span></a><a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-lineme" style="background-color: rgb(0, 185, 0); border-radius: 26px;"><span class="at4-visually-hidden">Share to LINE</span
-									><span
-										class="at-icon-wrapper"
-										style="line-height: 32px; height: 32px; width: 32px;"
-										><svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink"
-											viewBox="0 0 32 32"
-											version="1.1"
-											role="img"
-											aria-labelledby="at-svg-lineme-2"
-											class="at-icon at-icon-lineme"
-											style="
-												fill: rgb(255, 255, 255);
-												width: 32px;
-												height: 32px;
-											"
-										>
-											<title id="at-svg-lineme-2">LINE</title>
-											<g>
-												<path
-													d="M27 14.927c0 1.97-.764 3.744-2.358 5.492-2.307 2.655-7.468 5.89-8.642 6.385-1.174.495-1-.315-.953-.593l.157-.94c.037-.282.075-.718-.035-.996-.125-.306-.612-.465-.97-.542-5.287-.7-9.2-4.395-9.2-8.807C5 10.005 9.935 6 16 6c6.066 0 11 4.005 11 8.927zm-13.235-2.38h-.772a.214.214 0 0 0-.214.215v4.793c0 .118.095.214.213.214h.772a.214.214 0 0 0 .214-.215v-4.793a.214.214 0 0 0-.215-.214zm5.31 0h-.77a.214.214 0 0 0-.215.215v2.848l-2.197-2.967a.235.235 0 0 0-.017-.023l-.014-.013-.003-.004c-.005-.003-.01-.006-.013-.01-.002 0-.003-.002-.005-.004l-.01-.008a.262.262 0 0 0-.018-.01c-.004 0-.006-.003-.008-.004a.605.605 0 0 0-.013-.005l-.007-.002a.106.106 0 0 0-.02-.005.098.098 0 0 0-.012-.003h-.01c-.003-.002-.006-.002-.01-.003-.004 0-.007 0-.01-.002h-.78a.214.214 0 0 0-.214.214v4.793c0 .118.095.214.214.214h.77a.214.214 0 0 0 .216-.215v-2.847l2.2 2.97c.014.022.033.04.053.053 0 .002.002.002.002.003l.014.008c0 .002.003.003.005.004l.01.005c.003 0 .007.002.01.004.003 0 .004 0 .007.002l.014.005s.002 0 .003.002a.206.206 0 0 0 .054.007h.772a.214.214 0 0 0 .214-.215v-4.793a.214.214 0 0 0-.214-.214zm-7.17 4.022H9.81V12.76a.214.214 0 0 0-.216-.214h-.77a.214.214 0 0 0-.216.214v4.793c0 .058.023.11.06.148l.003.003c.002 0 .003.002.005.003.038.036.09.06.147.06h3.083a.214.214 0 0 0 .214-.215v-.772a.214.214 0 0 0-.215-.214zm11.432-2.822a.214.214 0 0 0 .214-.214v-.77a.214.214 0 0 0-.213-.216h-3.082a.213.213 0 0 0-.15.06s0 .002-.002.003c0 .002-.003.003-.004.005a.214.214 0 0 0-.06.147v4.793c0 .057.023.11.06.148l.003.003.003.003c.04.036.09.06.148.06h3.083a.214.214 0 0 0 .214-.215v-.772a.214.214 0 0 0-.213-.214H21.24v-.812h2.097a.214.214 0 0 0 .214-.214v-.77a.214.214 0 0 0-.213-.216H21.24v-.81h2.097z"
-													fill-rule="evenodd"
-												></path>
-											</g></svg></span></a
-								><a
-									role="button"
-									tabindex="0"
-									class="at-icon-wrapper at-share-btn at-svc-mailto"
-									style="background-color: rgb(88, 88, 88); border-radius: 26px;"
-									><span class="at4-visually-hidden">Share to Email App</span
-									><span
-										class="at-icon-wrapper"
-										style="line-height: 32px; height: 32px; width: 32px;"
-										><svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink"
-											viewBox="0 0 32 32"
-											version="1.1"
-											role="img"
-											aria-labelledby="at-svg-mailto-3"
-											class="at-icon at-icon-mailto"
-											style="
-												fill: rgb(255, 255, 255);
-												width: 32px;
-												height: 32px;
-											"
-										>
-											<title id="at-svg-mailto-3">Email App</title>
-											<g>
-												<g fill-rule="evenodd"></g>
-												<path
-													d="M26.684 23.264H4.948v-12.88l.2-.1c.303-.202 7.046-4.73 8.152-5.435 1.41-.907 3.22-.806 4.63.1 1.308.804 8.453 5.333 8.453 5.333l.2.1.1 12.88zm-20.63-1.006H25.68v-11.27c-1.207-.806-7.044-4.53-8.252-5.133-1.107-.704-2.515-.704-3.622-.1-1.007.603-6.743 4.528-7.95 5.232.2.1.2 11.27.2 11.27z"
-												></path>
-												<path
-													d="M21.753 16.622H10.08a1.59 1.59 0 0 1-1.61-1.61v-3.02c0-.905.704-1.61 1.61-1.61h11.673c.906 0 1.61.705 1.61 1.61v3.02a1.59 1.59 0 0 1-1.61 1.61zM9.98 11.49c-.404 0-.605.302-.605.604v3.02c0 .4.302.603.604.603H21.65c.403 0 .604-.302.604-.604v-3.02c0-.402-.302-.603-.604-.603H9.98z"
-												></path>
-												<path
-													d="M25.778 21.956v-10.97l-5.837 4.53 5.838 6.44zM5.954 21.956v-10.97l5.837 4.53-5.836 6.44z"
-												></path>
-												<path
-													d="M25.778 22.76l-6.138-6.74h-7.548l-6.137 6.74-.806-.603 6.54-7.145h8.353l6.54 7.145-.805.604z"
-												></path>
-												<path
-													d="M25.945 10.334l.61.8-6.32 4.823-.61-.8zM5.902 10.386l6.326 4.814-.61.802-6.326-4.815zM15.816 17.83l.302 8.252 2.013-2.516 2.013 4.226 1.107-.503-2.113-4.227 3.22-.2-6.54-5.033z"
-												></path>
-											</g></svg></span></a
-								><a
-									role="button"
-									tabindex="0"
-									class="at-icon-wrapper at-share-btn at-svc-compact"
+						>
+						<div class="at-share-btn-elements">
+							<a
+								role="button"
+								tabindex="0"
+								class="at-icon-wrapper at-share-btn at-svc-kakao"
+								style="background-color: rgb(250, 185, 0); border-radius: 26px;"
+								><span class="at4-visually-hidden">Share to Kakao</span
+								><span
+									class="at-icon-wrapper"
+									style="line-height: 32px; height: 32px; width: 32px;"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 32 32"
+										version="1.1"
+										role="img"
+										aria-labelledby="at-svg-kakao-1"
+										class="at-icon at-icon-kakao"
+										style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"
+									>
+										<title id="at-svg-kakao-1">Kakao</title>
+										<g>
+											<path
+												d="M20.826 6h-9.652C10.524 6 10 6.51 10 7.138v9.336c0 .63.525 1.14 1.174 1.14h4.45c-.03 1.11-.507 2.318-1.196 3.39-.775 1.207-2.426 2.543-2.44 2.555-.13.12-.226.26-.23.456 0 .15.08.263.167.385l3.104 3.395s.15.154.274.183c.14.033.3.037.41-.045 5.374-4.032 6.15-9.085 6.285-11.82V7.137C22 6.508 21.475 6 20.826 6"
+												fill-rule="evenodd"
+											></path>
+										</g></svg></span></a><a role="button" tabindex="0" class="at-icon-wrapper at-share-btn at-svc-lineme" style="background-color: rgb(0, 185, 0); border-radius: 26px;"><span class="at4-visually-hidden">Share to LINE</span
+								><span
+									class="at-icon-wrapper"
+									style="line-height: 32px; height: 32px; width: 32px;"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 32 32"
+										version="1.1"
+										role="img"
+										aria-labelledby="at-svg-lineme-2"
+										class="at-icon at-icon-lineme"
+										style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"
+									>
+										<title id="at-svg-lineme-2">LINE</title>
+										<g>
+											<path
+												d="M27 14.927c0 1.97-.764 3.744-2.358 5.492-2.307 2.655-7.468 5.89-8.642 6.385-1.174.495-1-.315-.953-.593l.157-.94c.037-.282.075-.718-.035-.996-.125-.306-.612-.465-.97-.542-5.287-.7-9.2-4.395-9.2-8.807C5 10.005 9.935 6 16 6c6.066 0 11 4.005 11 8.927zm-13.235-2.38h-.772a.214.214 0 0 0-.214.215v4.793c0 .118.095.214.213.214h.772a.214.214 0 0 0 .214-.215v-4.793a.214.214 0 0 0-.215-.214zm5.31 0h-.77a.214.214 0 0 0-.215.215v2.848l-2.197-2.967a.235.235 0 0 0-.017-.023l-.014-.013-.003-.004c-.005-.003-.01-.006-.013-.01-.002 0-.003-.002-.005-.004l-.01-.008a.262.262 0 0 0-.018-.01c-.004 0-.006-.003-.008-.004a.605.605 0 0 0-.013-.005l-.007-.002a.106.106 0 0 0-.02-.005.098.098 0 0 0-.012-.003h-.01c-.003-.002-.006-.002-.01-.003-.004 0-.007 0-.01-.002h-.78a.214.214 0 0 0-.214.214v4.793c0 .118.095.214.214.214h.77a.214.214 0 0 0 .216-.215v-2.847l2.2 2.97c.014.022.033.04.053.053 0 .002.002.002.002.003l.014.008c0 .002.003.003.005.004l.01.005c.003 0 .007.002.01.004.003 0 .004 0 .007.002l.014.005s.002 0 .003.002a.206.206 0 0 0 .054.007h.772a.214.214 0 0 0 .214-.215v-4.793a.214.214 0 0 0-.214-.214zm-7.17 4.022H9.81V12.76a.214.214 0 0 0-.216-.214h-.77a.214.214 0 0 0-.216.214v4.793c0 .058.023.11.06.148l.003.003c.002 0 .003.002.005.003.038.036.09.06.147.06h3.083a.214.214 0 0 0 .214-.215v-.772a.214.214 0 0 0-.215-.214zm11.432-2.822a.214.214 0 0 0 .214-.214v-.77a.214.214 0 0 0-.213-.216h-3.082a.213.213 0 0 0-.15.06s0 .002-.002.003c0 .002-.003.003-.004.005a.214.214 0 0 0-.06.147v4.793c0 .057.023.11.06.148l.003.003.003.003c.04.036.09.06.148.06h3.083a.214.214 0 0 0 .214-.215v-.772a.214.214 0 0 0-.213-.214H21.24v-.812h2.097a.214.214 0 0 0 .214-.214v-.77a.214.214 0 0 0-.213-.216H21.24v-.81h2.097z"
+												fill-rule="evenodd"
+											></path>
+										</g></svg></span></a
+							><a
+								role="button"
+								tabindex="0"
+								class="at-icon-wrapper at-share-btn at-svc-mailto"
+								style="background-color: rgb(88, 88, 88); border-radius: 26px;"
+								><span class="at4-visually-hidden">Share to Email App</span
+								><span
+									class="at-icon-wrapper"
+									style="line-height: 32px; height: 32px; width: 32px;"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 32 32"
+										version="1.1"
+										role="img"
+										aria-labelledby="at-svg-mailto-3"
+										class="at-icon at-icon-mailto"
+										style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"
+									>
+										<title id="at-svg-mailto-3">Email App</title>
+										<g>
+											<g fill-rule="evenodd"></g>
+											<path
+												d="M26.684 23.264H4.948v-12.88l.2-.1c.303-.202 7.046-4.73 8.152-5.435 1.41-.907 3.22-.806 4.63.1 1.308.804 8.453 5.333 8.453 5.333l.2.1.1 12.88zm-20.63-1.006H25.68v-11.27c-1.207-.806-7.044-4.53-8.252-5.133-1.107-.704-2.515-.704-3.622-.1-1.007.603-6.743 4.528-7.95 5.232.2.1.2 11.27.2 11.27z"
+											></path>
+											<path
+												d="M21.753 16.622H10.08a1.59 1.59 0 0 1-1.61-1.61v-3.02c0-.905.704-1.61 1.61-1.61h11.673c.906 0 1.61.705 1.61 1.61v3.02a1.59 1.59 0 0 1-1.61 1.61zM9.98 11.49c-.404 0-.605.302-.605.604v3.02c0 .4.302.603.604.603H21.65c.403 0 .604-.302.604-.604v-3.02c0-.402-.302-.603-.604-.603H9.98z"
+											></path>
+											<path
+												d="M25.778 21.956v-10.97l-5.837 4.53 5.838 6.44zM5.954 21.956v-10.97l5.837 4.53-5.836 6.44z"
+											></path>
+											<path
+												d="M25.778 22.76l-6.138-6.74h-7.548l-6.137 6.74-.806-.603 6.54-7.145h8.353l6.54 7.145-.805.604z"
+											></path>
+											<path
+												d="M25.945 10.334l.61.8-6.32 4.823-.61-.8zM5.902 10.386l6.326 4.814-.61.802-6.326-4.815zM15.816 17.83l.302 8.252 2.013-2.516 2.013 4.226 1.107-.503-2.113-4.227 3.22-.2-6.54-5.033z"
+											></path>
+										</g></svg></span></a
+							><a
+								role="button"
+								tabindex="0"
+								class="at-icon-wrapper at-share-btn at-svc-compact"
+								style="background-color: rgb(255, 101, 80); border-radius: 26px;"
+								><span class="at4-visually-hidden">Share to 더 보기</span
+								><span
+									class="at-icon-wrapper"
+									style="line-height: 32px; height: 32px; width: 32px;"
+									><svg
+										xmlns="http://www.w3.org/2000/svg"
+										xmlns:xlink="http://www.w3.org/1999/xlink"
+										viewBox="0 0 32 32"
+										version="1.1"
+										role="img"
+										aria-labelledby="at-svg-addthis-4"
+										class="at-icon at-icon-addthis"
+										style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"
+									>
+										<title id="at-svg-addthis-4">AddThis</title>
+										<g>
+											<path
+												d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z"
+												fill-rule="evenodd"
+											></path>
+										</g></svg></span
+								><span
+									class="at4-share-count-container"
 									style="
-										background-color: rgb(255, 101, 80);
-										border-radius: 26px;
+										font-size: 11.4px;
+										line-height: 32px;
+										color: rgb(255, 255, 255);
 									"
-									><span class="at4-visually-hidden">Share to addthis</span
-									><span
-										class="at-icon-wrapper"
-										style="line-height: 32px; height: 32px; width: 32px;"
-										><svg
-											xmlns="http://www.w3.org/2000/svg"
-											xmlns:xlink="http://www.w3.org/1999/xlink"
-											viewBox="0 0 32 32"
-											version="1.1"
-											role="img"
-											aria-labelledby="at-svg-addthis-4"
-											class="at-icon at-icon-addthis"
-											style="
-												fill: rgb(255, 255, 255);
-												width: 32px;
-												height: 32px;
-											"
-										>
-											<title id="at-svg-addthis-4">AddThis</title>
-											<g>
-												<path
-													d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z"
-													fill-rule="evenodd"
-												></path>
-											</g></svg></span
-									><span
-										class="at4-share-count-container"
-										style="
-											font-size: 11.4px;
-											line-height: 32px;
-											color: rgb(255, 255, 255);
-										"
-										>15</span
-									></a
-								>
-							</div>
+									>15</span
+								></a
+							>
 						</div>
 					</div>
+				</div>
 
-					<div class="pt-3 image-title-wrap">
-						<button
-							type="button p-2"
-							class="try-again-btn"
-							onclick="window.location.reload();"
-						>
-							<span class="try-again-text">다른 사진으로 재시도</span>
-						</button>
-					</div>
+				<div class="pt-3 image-title-wrap">
+					<button
+						type="button p-2"
+						class="try-again-btn"
+						onclick="window.location.reload();"
+					>
+						<span class="try-again-text">Try again with another one</span>
+					</button>
 				</div>
 			</div>
-			<div class="ad-banner">
-				<ins
-					class="kakao_ad_area"
-					style="display: none;"
-					data-ad-unit=""
-					data-ad-width="728"
-					data-ad-height="90"
-				></ins>
-				<script
-					type="text/javascript"
-					src="//t1.daumcdn.net/kas/static/ba.min.js"
-					async
-				></script>
-				<div style="padding: 10px 10px 10px 10px;"></div>
+		</div>
+		<div class="ad-banner">
+			
+			
 
-				<a href="사이트주소"><img src="img/.png" /></a>
-                        <img src="img/1.png">
-                        <p></p>
+			<a href="사이트주소"><img src=".\media\banner.png"/></a>
+                        <div style="padding: 10px 10px 10px 10px;"></div>
+                        <div class="sigh">
+                            <p>© JMDREAM 2021. All Rights Reserved.</p>
+                        </div>
 
-                        <a href="https://www.youtube.com/channel/UCQNE2JmbasNYbjGAcuBiRRg" class="youtube-link">By 조코딩 유튜브 채널</a
-				>
-				
-				
-				<div class="sigh">
-					<p>© JMDREAM 2021. All Rights Reserved.</p>
-				</div>
-				
-				<div style="padding: 10px 10px 10px 10px;"></div>
 
-				<script>
-					function readURL(input) {
-						if (input.files && input.files[0]) {
-							var reader = new FileReader();
-							reader.onload = function (e) {
-								$('.image-upload-wrap').hide();
-								$('#loading').show();
-								$('.file-upload-image').attr('src', e.target.result);
-								$('.file-upload-content').show();
-								$('.image-title').html(input.files[0].name);
-							};
-							reader.readAsDataURL(input.files[0]);
-							init().then(function () {
-								console.log('hello');
-								predict();
-								$('#loading').hide();
-							});
-						} else {
-							removeUpload();
-						}
-					}
+                        <script>
+                            function readURL(input) {
+                                if (input.files && input.files[0]) {
+                                    var reader = new FileReader();
+                                    reader.onload = function(e) {
+                                        $('.image-upload-wrap').hide();
+                                        $('#loading').show();
+                                        $('.file-upload-image').attr('src', e.target.result);
+                                        $('.file-upload-content').show();
+                                        $('.image-title').html(input.files[0].name);
+                                    };
+                                    reader.readAsDataURL(input.files[0]);
+                                    init().then(function() {
+                                        console.log('hello');
+                                        predict();
+                                        $('#loading').hide();
+                                    });
+                                } else {
+                                    removeUpload();
+                                }
+                            }
 
-					function removeUpload() {
-						$('.file-upload-input').replaceWith($('.file-upload-input').clone());
-						$('.file-upload-content').hide();
-						$('.image-upload-wrap').show();
-					}
-					$('.image-upload-wrap').bind('dragover', function () {
-						$('.image-upload-wrap').addClass('image-dropping');
-					});
-					$('.image-upload-wrap').bind('dragleave', function () {
-						$('.image-upload-wrap').removeClass('image-dropping');
-					});
-				</script>
-				<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-				<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-				<script type="text/javascript">
-					// More API functions here:
-					// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-					// the link to your model provided by Teachable Machine export panel
-					const URL = 'https://teachablemachine.withgoogle.com/models/uK-e_h2c6/';
-					let model, webcam, labelContainer, maxPredictions;
-					// Load the image model and setup the webcam
-					async function init() {
-						const modelURL = URL + 'model.json';
-						const metadataURL = URL + 'metadata.json';
-						// load the model and metadata
-						// Refer to tmImage.loadFromFiles() in the API to support files from a file picker
-						// or files from your local hard drive
-						// Note: the pose library adds "tmImage" object to your window (window.tmImage)
-						model = await tmImage.load(modelURL, metadataURL);
-						maxPredictions = model.getTotalClasses();
-						// append elements to the DOM
-						labelContainer = document.getElementById('label-container');
-						for (let i = 0; i < maxPredictions; i++) {
-							// and class labels
-							labelContainer.appendChild(document.createElement('div'));
-						}
-					}
-					// run the webcam image through the image model
-					async function predict() {
-						var image = document.getElementById('food-image');
-						const prediction = await model.predict(image, false);
-						prediction.sort(
-							(a, b) => parseFloat(b.probability) - parseFloat(a.probability)
-						);
-						console.log(prediction[0].className);
-						var resultTitle, resultExplain, resultCeleb;
-						switch (prediction[0].className) {
-							// 한국음식 리스트 START
+                            function removeUpload() {
+                                $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                                $('.file-upload-content').hide();
+                                $('.image-upload-wrap').show();
+                            }
+                            $('.image-upload-wrap').bind('dragover', function() {
+                                $('.image-upload-wrap').addClass('image-dropping');
+                            });
+                            $('.image-upload-wrap').bind('dragleave', function() {
+                                $('.image-upload-wrap').removeClass('image-dropping');
+                            });
+                        </script>
+                        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+                        <script type="text/javascript">
+                            // More API functions here:
+                            // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+                            // the link to your model provided by Teachable Machine export panel
+                            const URL = 'https://teachablemachine.withgoogle.com/models/uK-e_h2c6/';
+                            let model, webcam, labelContainer, maxPredictions;
+                            // Load the image model and setup the webcam
+                            async function init() {
+                                const modelURL = URL + 'model.json';
+                                const metadataURL = URL + 'metadata.json';
+                                // load the model and metadata
+                                // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                                // or files from your local hard drive
+                                // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                                model = await tmImage.load(modelURL, metadataURL);
+                                maxPredictions = model.getTotalClasses();
+                                // append elements to the DOM
+                                labelContainer = document.getElementById('label-container');
+                                for (let i = 0; i < maxPredictions; i++) {
+                                    // and class labels
+                                    labelContainer.appendChild(document.createElement('div'));
+                                }
+                            }
+                            // run the webcam image through the image model
+                            async function predict() {
+                                var image = document.getElementById('dog-image');
+                                const prediction = await model.predict(image, false);
+                                prediction.sort(
+                                    (a, b) => parseFloat(b.probability) - parseFloat(a.probability)
+                                );
+                                console.log(prediction[0].className);
+                                var resultTitle, resultExplain, resultCeleb;
+                                switch (prediction[0].className) {
 
-							case '김밥':
-								resultTitle = '김밥';
-								resultExplain =
-									'김밥은 소금이나 참기름으로 간을 한 밥에 시금치, 단무지, 햄, 치즈, 참치, 달걀 등 다양한 속재료를 넣고 김으로 말아서 먹는 음식이다. 먹기가 편리하여 보통 소풍이나 여행을 갈 때 먹는다. ';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '곤드레밥':
-								resultTitle = '곤드레밥';
-								resultExplain =
-									'곤드레밥은 밥 위에 곤드레나물을 얹어 양념장과 함께 먹는 나물밥이다. 곤드레나물은 생으로 쌈 또는 튀김, 무침 밥 이외에도 다양한 조리 방법이 존재한다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '비빔밥':
-								resultTitle = '비빔밥';
-								resultExplain =
-									'비빔밥은 흰밥에 나물, 채소, 고기, 계란, 튀각 등 다양한 반찬들을 위에 올려서 섞어 비벼먹는 음식이다. 외국인이 첫 번째로 선택하는 대한민국의 대표적인 음식이다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '볶음밥':
-								resultTitle = '볶음밥';
-								resultExplain =
-									'볶음밥은 고기, 채소 등 다양한 재료를 넣고 밥과 함께 볶은 밥이다. 먹고 남은 밥을 다른 재료와 함께 볶은 것에서 유래한 음식이다. 여러 동양권 나라에서 널리 알려진 음식이다.';
-								resultCeleb = '원산지: 알 수 없음';
-								break;
-							case '덮밥':
-								resultTitle = '덮밥';
-								resultExplain =
-									'덮밥은 고기, 채소 등을 조리하여 밥 위에 얹어서 먹는 음식이다. 재료에 따라 장어 덮밥, 닭고기 덮밥, 회덮밥 등 취향에 따라 골라 먹을 수 있다. ';
-								resultCeleb = '원산지: 알 수 없음';
-								break;
-							case '컵밥':
-								resultTitle = '컵밥';
-								resultExplain =
-									'컵밥은 한국의 2000년대 초반에 탄생한 플라스틱이나 종이 재질의 컵 속에 밥을 넣고 여러 가지 반찬들을 얹은 음식이다. 공무원 합격을 위한 유명 학원가인 노량진에서 학생들이 저렴하고 한 끼 식사로 충분한 음식으로 호응을 받아왔다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '삼계죽':
-								resultTitle = '삼계죽';
-								resultExplain =
-									'삼계죽은 닭 육수에 찹쌀과 멥쌀을 넣고 닭고기의 살이 풀어지도록 고은 후 불린 쌀을 함께 끓인 음식이다. 고명으로 대추, 인삼 등을 올려 먹는다.';
-								resultCeleb = '원산지: 알 수 없음';
-								break;
-							case '전복죽':
-								resultTitle = '전복죽';
-								resultExplain =
-									'전복죽은 전복을 살짝 데쳐서 얇게 썰어서 불린 쌀과 함께 끓인 음식이다. 전복 내장을 같이 넣으면 특별한 향이 난다. 8월~10월에 가장 맛있기로 유명하다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '팥죽':
-								resultTitle = '팥죽';
-								resultExplain =
-									'팥죽은 팥을 삶아 으깬 물에 쌀을 넣고 함께 끓인 죽이다. 아시아의 여러 국가에서 팥을 이용한 여러 방식으로 음식이 존재한다.';
-								resultCeleb = '원산지: 알 수 없음';
-								break;
-							case '호박죽':
-								resultTitle = '호박죽';
-								resultExplain =
-									'호박죽은 늙은 호박을 삶아 으깬 뒤 찹쌀가루를 넣고 끓인 죽이다. 카로틴과 비타민도 풍부해 소화기관에도 좋은 영양식이다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '밥버거':
-								resultTitle = '밥버거';
-								resultExplain =
-									'밥버거는 햄버거처럼 밥을 빵으로 하여 그 사이에 반찬 토핑들을 넣고 뭉친 음식이다. 가격이 저렴하면서 든든하게 끼니를 해결할 수 있다는 장점이 있다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '고기국수':
-								resultTitle = '고기국수';
-								resultExplain =
-									'고기국수는 돼지 뼈를 끓인 육수에 국수를 말고, 수육을 올려먹는 음식이다. 이 음식은 양념을 거의 사용하지 않고 재료 본연의 맛이 나 향토음식으로 유명하다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '김치말이국수':
-								resultTitle = '김치말이국수';
-								resultExplain =
-									'김치말이국수는 동치미나 열무김치 또는 김치를 넣은 육수에 소면 종류의 국수를 넣어 먹는 음식이다. 취향에 따라 김치를 더해 먹으면 식감과 감칠맛이 살아난다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '닭칼국수':
-								resultTitle = '닭칼국수';
-								resultExplain =
-									'닭칼국수는 닭을 끓인 육수에 칼국수면을 넣어 끓인 뒤, 닭고기 살을 풀어 올려먹는 음식이다. 담백한 닭 육수는 삼계탕과 비슷해 여름 보양식으로도 제격이다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '막국수':
-								resultTitle = '막국수';
-								resultExplain =
-									'막국수는 메밀막국수라고도 부르며 강원도 향토음식이다. 메밀국수에 김치와 오이, 무 등을 면 위에 얹고 비빔 양념장을 비벼 먹는다. 취향에 따라 김치국물 육수를 말아먹는다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '비빔국수':
-								resultTitle = '비빔국수';
-								resultExplain =
-									'비빔국수는 국수를 삶아 물기를 뺀 뒤에 김치 등 기호에 따라 재료들을 섞어 양념장과 비벼서 먹는 음식이다. 동치미나 나박김치 등을 함께 곁들어먹으면 더 맛있게 느낄 수 있다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '잔치국수':
-								resultTitle = '잔치국수';
-								resultExplain =
-									'잔치국수는 삶은 국수에 고명을 올린 뒤 맑은 장국을 부은 음식이다. 예전에는 결혼식, 생일 등 특별한 날에 손님을 대접하는 음식으로 유명했다. ';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '초계국수':
-								resultTitle = '초계국수';
-								resultExplain =
-									'초계국수는 삶은 메밀 면에 식힌 닭 육수에 식초와 겨자로 간을 한 뒤 찢은 닭고기 살을 올려먹는 음식이다. 단백질이 풍부해 여름 보양식으로도 즐긴다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '칼국수':
-								resultTitle = '칼국수';
-								resultExplain =
-									'칼국수는 밀가루를 반죽해 가늘게 썬 국수를 닭, 멸치 등의 국물에 끓여 애호박, 감자, 각종 해물 등을 함께 먹는 음식이다. 재료에 따라 종류와 맛도 다양하게 존재한다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
-							case '콩국수':
-								resultTitle = '콩국수';
-								resultExplain =
-									'콩국수는 콩을 곱게 갈아 체에 내린 콩국에 국수를 삶아 말아먹는 음식이다. 취향에 따라 소금간을 하고 열무김치를 곁들어먹는다.';
-								resultCeleb = '원산지: 대한민국';
-								break;
+                                    // 한국음식 리스트 START
 
-							// 한국음식 리스트 END
+                                    case '김밥':
+                                        resultTitle = 'Gimbap(김밥)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '곤드레밥':
+                                        resultTitle = 'Gondeure-bap(곤드레밥)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '비빔밥':
+                                        resultTitle = 'Bibim-bap(비빔밥)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '볶음밥':
+                                        resultTitle = 'Fried rice';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Unknown';
+                                        break;
+                                    case '덮밥':
+                                        resultTitle = 'Rice with toppings';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Unknown';
+                                        break;
+                                    case '컵밥':
+                                        resultTitle = 'Cup rice';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '삼계죽':
+                                        resultTitle = 'Samgye-juk(삼계죽)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Unknown';
+                                        break;
+                                    case '전복죽':
+                                        resultTitle = 'Jeonbok-juk(전복죽)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '팥죽':
+                                        resultTitle = 'Pat-juk(팥죽)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Unknown';
+                                        break;
+                                    case '호박죽':
+                                        resultTitle = 'Hobak-juk(호박죽)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '밥버거':
+                                        resultTitle = 'Rice burger';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '고기국수':
+                                        resultTitle = 'Gogiguksu(고기국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '김치말이국수':
+                                        resultTitle = 'Kimchimariguksu(김치말이국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '닭칼국수':
+                                        resultTitle = 'Dakkalguksu(닭칼국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '막국수':
+                                        resultTitle = 'Makguksu(막국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '비빔국수':
+                                        resultTitle = 'Bibimguksu(비빔국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '잔치국수':
+                                        resultTitle = 'Janchiguksu(잔치국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '초계국수':
+                                        resultTitle = 'Chogyeguksu(초계국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '칼국수':
+                                        resultTitle = 'Kalguksu(칼국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
+                                    case '콩국수':
+                                        resultTitle = 'Kongguksu(콩국수)';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
 
-							case '':
-								resultTitle = '';
-								resultExplain = '';
-								resultCeleb = '원산지: 대한민국';
-								break;
+                                        // 한국음식 리스트 END
 
-							default:
-								resultTitle = '인식 불가';
-								resultExplain = '정확한 사진을 올려주세요';
-								resultCeleb = '';
-						}
-						//     }
-						var title =
-							"<div class='" +
-							prediction[0].className +
-							"-food-title'>" +
-							resultTitle +
-							'</div>';
-						var explain = "<div class='food-explain pt-2'>" + resultExplain + '</div>';
-						var celeb =
-							"<div class='" +
-							prediction[0].className +
-							"-food-celeb pt-2 pb-2'>" +
-							resultCeleb +
-							'</div>';
-						$('.result-message').html(title + explain + celeb);
-					}
-				</script>
+                                    case '':
+                                        resultTitle = '';
+                                        resultExplain =
+                                            '';
+                                        resultCeleb = 'Country of origin: Republic of Korea';
+                                        break;
 
-				<script>
-					function iosApp() {
-					    document.getElementById('').style.display = 'none';
-					    $('# ins').hide();
-					    document.getElementById('addThis').style.display = 'none';
-					    document.getElementById('disqus_thread').style.display = 'none';
-					    var  = document.getElementsByClassName('');
-					    for (var i = 0; i < ; i++) {
-					        if ([i]) {
-					            [i].style.display = 'none';
-					        }
-					    }
-					}
-				</script>
-			</div>
-		</body>
-	</head>
+                                    default:
+                                        resultTitle = 'Unrecognizable';
+                                        resultExplain = 'Please post the exact picture';
+                                        resultCeleb = '';
+                                }
+                                //     }
+                                var title =
+                                    "<div class='" +
+                                    prediction[0].className +
+                                    "-food-title'>" +
+                                    resultTitle +
+                                    '</div>';
+                                var explain = "<div class='food-explain pt-2'>" + resultExplain + '</div>';
+                                var celeb =
+                                    "<div class='" +
+                                    prediction[0].className +
+                                    "-food-celeb pt-2 pb-2'>" +
+                                    resultCeleb +
+                                    '</div>';
+                                $('.result-message').html(title + explain + celeb);
+                            }
+                        </script>
+
+                        <script>
+                            function iosApp() {
+                                document.getElementById('').style.display = 'none';
+                                $('# ins').hide();
+                                document.getElementById('addThis').style.display = 'none';
+                                document.getElementById('disqus_thread').style.display = 'none';
+                                var = document.getElementsByClassName('');
+                                for (var i = 0; i < ; i++) {
+                                    if ([i]) {
+                                        [i].style.display = 'none';
+                                    }
+                                }
+                            }
+                        </script>
+                    </div>
+    </body>
+</head>
+
 </html>
 
-			
+
 
 <!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
@@ -633,4 +596,11 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+
+Copyright (c) font Do Hyeon (Woowahan Brothers & Principal design)
+
+https://fonts.google.com/specimen/Do+Hyeon?subset=korean&preview.text=%ED%99%88&preview.text_type=custom#standard-styles
+
+-->

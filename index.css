@@ -55,9 +55,10 @@ header .carousel-inner .item {
     padding: 15px 35px;
     display: inline-block;
     margin-top: 15px;
+    font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
-    border-radius: 25px;
+    border-radius: 1rem;
 }
 
 .carousel-control.right {

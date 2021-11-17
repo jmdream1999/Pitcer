@@ -1,16 +1,14 @@
 body {
-    font-family: 'Jua', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
     background-color: #ffffff;
     box-sizing: border-box;
-    color: #35465d;
+    color: #ffffff;
 }
 
 .file-upload {
-    padding: 15% 3%;
+    padding: 5% 3%;
     margin: 0 auto;
     border-radius: 10px;
-    border: solid 1.5px #f6f7fa;
-    background-color: #f6f7fa;
 }
 
 .file-upload-btn {
@@ -47,6 +45,8 @@ body {
 
 #loading {
     display: none;
+    color: #d8531e;
+    font-weight: 900;
 }
 
 .file-upload-input {
@@ -62,19 +62,17 @@ body {
 
 .image-upload-wrap {
     width: 60%;
+    height: 0%;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
     border-radius: 10px;
     border: dashed 1.5px #35465d;
-    background-color: #ffffff;
+    background-image: url(https://i.postimg.cc/0jpsRfF6/pexels-laura-james-6101974.jpg);
 }
 
 .image-dropping,
-.image-upload-wrap:hover {
-    background-color: #35465d82;
-    border: 1.5px dashed #ffffff;
-}
+.image-upload-wrap:hover {}
 
 .image-title-wrap {
     padding: 0 15px 15px 15px;
@@ -85,9 +83,17 @@ body {
     text-align: center;
 }
 
-.drag-text h3 {
+.drag-text h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #207fd1;
+}
+
+.drag-text h6 {
+    font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    color: #24268a;
 }
 
 .file-upload-image {
@@ -98,7 +104,7 @@ body {
 }
 
 .try-again-btn {
-    border-radius: 40px;
+    border-radius: 2rem;
     border: solid 1.5px #35465d;
     background-color: #35465d;
 }
@@ -140,13 +146,14 @@ body {
 .title {
     line-height: 1.67;
     text-align: center;
-    color: #35465d;
+    color: rgb(212, 27, 135);
+    font-size: 5rem;
 }
 
 .subtitle {
     line-height: 1.53;
     text-align: center;
-    color: #35465d;
+    color: #4d1010
 }
 
 
@@ -222,10 +229,6 @@ body {
 
 /* 한국음식 리스트 START */
 
-.김밥-food-explain {
-    font-size: 25px;
-}
-
 .김밥-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -233,10 +236,6 @@ body {
 
 .김밥-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.곤드레밥-food-explain {
     font-size: 25px;
 }
 
@@ -250,10 +249,6 @@ body {
     font-size: 25px;
 }
 
-.비빔밥-food-explain {
-    font-size: 25px;
-}
-
 .비빔밥-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -261,10 +256,6 @@ body {
 
 .비빔밥-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.볶음밥-food-explain {
     font-size: 25px;
 }
 
@@ -278,10 +269,6 @@ body {
     font-size: 25px;
 }
 
-.덮밥-food-explain {
-    font-size: 25px;
-}
-
 .덮밥-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -289,10 +276,6 @@ body {
 
 .덮밥-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.컵밥-food-explain {
     font-size: 25px;
 }
 
@@ -306,10 +289,6 @@ body {
     font-size: 25px;
 }
 
-.삼계죽-food-explain {
-    font-size: 25px;
-}
-
 .삼계죽-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -317,10 +296,6 @@ body {
 
 .삼계죽-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.전복죽-food-explain {
     font-size: 25px;
 }
 
@@ -334,10 +309,6 @@ body {
     font-size: 25px;
 }
 
-.팥죽-food-explain {
-    font-size: 25px;
-}
-
 .팥죽-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -345,10 +316,6 @@ body {
 
 .팥죽-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.호박죽-food-explain {
     font-size: 25px;
 }
 
@@ -362,10 +329,6 @@ body {
     font-size: 25px;
 }
 
-.밥버거-food-explain {
-    font-size: 25px;
-}
-
 .밥버거-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -373,10 +336,6 @@ body {
 
 .밥버거-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.고기국수-food-explain {
     font-size: 25px;
 }
 
@@ -390,10 +349,6 @@ body {
     font-size: 25px;
 }
 
-.김치말이국수-food-explain {
-    font-size: 25px;
-}
-
 .김치말이국수-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -401,10 +356,6 @@ body {
 
 .김치말이국수-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.닭칼국수-food-explain {
     font-size: 25px;
 }
 
@@ -418,10 +369,6 @@ body {
     font-size: 25px;
 }
 
-.막국수-food-explain {
-    font-size: 25px;
-}
-
 .막국수-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -429,10 +376,6 @@ body {
 
 .막국수-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.비빔국수-food-explain {
     font-size: 25px;
 }
 
@@ -446,10 +389,6 @@ body {
     font-size: 25px;
 }
 
-.잔치국수-food-explain {
-    font-size: 25px;
-}
-
 .잔치국수-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -457,10 +396,6 @@ body {
 
 .잔치국수-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.초계국수-food-explain {
     font-size: 25px;
 }
 
@@ -474,10 +409,6 @@ body {
     font-size: 25px;
 }
 
-.칼국수-food-explain {
-    font-size: 25px;
-}
-
 .칼국수-food-title {
     color: #fc5184;
     font-size: 35px;
@@ -485,10 +416,6 @@ body {
 
 .칼국수-food-celeb {
     color: #5a51fc;
-    font-size: 25px;
-}
-
-.콩국수-food-explain {
     font-size: 25px;
 }
 
@@ -640,7 +567,7 @@ body {
     font-size: 1rem;
     margin: 0;
     font: Bold;
-    background: url('https://i.postimg.cc/PfcdKDK2/abendbrot-gc0cad453d-1920.jpg') top center no-repeat;
+    background: url('https://i.postimg.cc/Vv27YPy4/pexels-lukas-1410141.jpg') top center no-repeat;
     background-size: cover;
 }
 
@@ -665,14 +592,22 @@ body {
     margin: 15px 0 12px 28px;
 }
 
-.text {
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-brand {
+    color: #000000;
+    font-family: 'Do Hyeon', sans-serif;
     font-size: 3rem;
+    margin-top: -1rem;
+    font-weight: 900;
 }
 
 .nav li a {
     text-decoration: none;
-    color: #fff;
-    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
     text-transform: uppercase;
 }
 
@@ -696,3 +631,15 @@ body {
         min-width: 768px;
     }
 }
+
+.sigh {
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+}
+
+
+/* Copyright (c) image
+
+https://www.pexels.com/ko-kr/photo/1410141/
+https://www.pexels.com/ko-kr/photo/6101974/
