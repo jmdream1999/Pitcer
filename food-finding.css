@@ -159,7 +159,7 @@ body {
 
 /* On screens that are 600px or less, set the background color to olive */
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 76px) and (max-width: 1px) {
     html {
         font-size: 10px;
     }
@@ -543,21 +543,6 @@ Flexbox Layout
     justify-content: space-around;
 }
 
-@media all and (min-width: 640px) {
-    .header,
-    .nav {
-        -webkit-flex-direction: row;
-        flex-direction: row;
-    }
-}
-
-@media all and (min-width: 1030px) {
-    .nav {
-        -webkit-flex: none;
-        flex: none;
-    }
-}
-
 
 /******************************
 Treehouse Styling
@@ -623,13 +608,6 @@ body {
 .nav li:last-child a:hover {
     background: rgba(255, 255, 255, 0.5);
     color: #fff;
-}
-
-@media all and (min-width: 1030px) {
-    .header {
-        width: 1030px;
-        min-width: 768px;
-    }
 }
 
 .sigh {
