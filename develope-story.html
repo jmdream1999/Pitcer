@@ -1,3 +1,13 @@
+<!-- 우리가 입력할 명령어의 뜻은 아래와 같습니다.
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/jmdream1999/Pitcer.git
+git push -u origin master
+
+ -->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -9,165 +19,156 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Praise&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pitcer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
     <link rel="stylesheet" href="develope-story.css">
 
 </head>
 
 <body>
-    <aside>
 
-        <nav>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                         <span class="sr-only">Toggle navigation</span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                         <span class="icon-bar"></span>
+                     </button>
+                    <a class="navbar-brand" href="https://pitcer.com/">Pitcer</a>
+                </div>
 
-            <a class="navbar-brand" href="https://pitcer.com/">Pitcer</a>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-            <ul>
-
-                <li><a href="https://pitcer.com/">Home</a></li>
-                <li><a href="https://pitcer.com/lang">Language</a></li>
-                <li><a href="https://pitcer.com/develope-story">Develope story</a></li>
-                <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmdream1999@gmail.com" target=”_blank”>Contact</a></li>
-
-            </ul>
-
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://pitcer.com/">Home</a></li>
+                        <li><a href="https://pitcer.com/lang">Language</a></li>
+                        <li><a href="https://pitcer.com/develope-story" target=”_blank”>Develope story</a></li>
+                        <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=jmdream1999@gmail.com" target=”_blank”>Contact</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
         </nav>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="banner" style="background-image: url(https://i.postimg.cc/HnbYqY0d/pexels-valeria-boltneva-1639563.jpg);"></div>
 
-    </aside>
 
-    <section>
 
-        <article>
+    </header>
 
-            <h2>Pitcer</h2>
-
-            <div class="thumb">
-
-                <img src="https://i.postimg.cc/RV95Hfyd/Pitcer-wide.png" alt="Post" />
-
+    <div class="container">
+        <h1>Blog Posts</h1>
+        <div class="row">
+            <div class="eight columns">
+                <div class="featured"></div>
+                <div class="teaser">
+                    <h3>JavaScript</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, sirloin landjaeger andouille beef ribs rump prosciutto pork loin porchetta. Pork loin pig boudin, andouille.</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
-
-            <div style="padding: 10px 10px 10px 10px;"></div>
-
-            <button><a href="https://pitcer.com/develope-story_pitcer">Read More</a></button>
-
-            <div class="options">
-
+            <div class="four columns">
+                <div class="img iTwo"></div>
+                <div class="teaser">
+                    <h3>Books</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, lorem ipsum</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
-
-        </article>
-
-        <article>
-
-            <h2>Food Finding</h2>
-
-            <div class="thumb">
-
-                <img src="https://i.postimg.cc/kGgfmNjJ/pexels-chan-walrus-958545.jpg" alt="Post" />
-
+        </div>
+        <div class="row">
+            <div class="six columns">
+                <div class="img iSix"></div>
+                <div class="teaser">
+                    <h3>Bacon</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, lorem ipsum</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
-
-            <div style="padding: 10px 10px 10px 10px;"></div>
-
-            <button><a href="#">Read More</a></button>
-
-            <div class="options">
-
+            <div class="six columns">
+                <div class="img iSeven"></div>
+                <div class="teaser">
+                    <h3>Sky</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, lorem ipsum</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
-
-        </article>
-
-        <article>
-
-            <h2>Post Title</h2>
-
-            <div class="thumb">
-
-                <img src="https://i.postimg.cc/MGr2cYLL/pexels-belle-co-847393.jpg" alt="Post2" />
-
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <div class="img iThree"></div>
+                <div class="teaser">
+                    <h3>Coffee</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, lorem ipsum</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
-
-            <div style="padding: 10px 10px 10px 10px;"></div>
-
-            <button><a href="#">Read More</a></button>
-
-        </article>
-
-        <article>
-
-            <h2>Post Title</h2>
-
-            <div class="thumb">
-
-                <img src="https://i.postimg.cc/D0kNspPx/pexels-zahid-lilani-2104742.jpg" alt="Post" />
-
+            <div class="four columns">
+                <div class="img iFour"></div>
+                <div class="teaser">
+                    <h3>Home</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, lorem ipsum</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
-
-            <div style="padding: 10px 10px 10px 10px;"></div>
-
-            <button><a href="#">Read More</a></button>
-        </article>
-
-        <article>
-
-            <h2>Post Title</h2>
-
-            <div class="thumb">
-
-                <img src="https://i.postimg.cc/8cNHN2Hg/pexels-riciardus-69903.jpg" alt="Post" />
-
+            <div class="four columns">
+                <div class="img iFive"></div>
+                <div class="teaser">
+                    <h3>Design</h3>
+                    <h6><span>11th October 2016</span></h6>
+                    <p>Bacon ipsum dolor amet doner tri-tip shankle, lorem ipsum</p>
+                    <h6><a href="#">Read More</a></h6>
+                </div>
             </div>
+        </div>
 
-            <div style="padding: 10px 10px 10px 10px;"></div>
 
-            <button><a href="#">Read More</a></button>
-        </article>
-        <div style="padding: 10px 10px 10px 10px;"></div>
-
-    </section>
-
-    </div>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>
 
-<!-- 
 
-Copyright (c) 2021 by Jack Thomson (https://codepen.io/Jackthomsonn/pen/yNgLeM)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-Copyright (c) fonts
-
-https://fonts.google.com/specimen/Montserrat+Alternates?preview.text=pitcer&preview.text_type=custom#standard-styles
-https://fonts.google.com/specimen/Advent+Pro?preview.text=pitcer&preview.text_type=custom#standard-styles
-https://fonts.google.com/specimen/Raleway?query=Rale
-
-    
-Copyright (c) image
-
-https://www.pexels.com/ko-kr/photo/958545/
-https://www.pexels.com/ko-kr/photo/847393/
-https://www.pexels.com/ko-kr/photo/2104742/
-https://www.pexels.com/ko-kr/photo/69903/
-
+<!-- Copyright (c) 2021 by God MB (https://codepen.io/mayurbagade456-gmail-com/pen/BaQEpeV)
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+ 
+ Copyright (c) font 
+ 
+ https://fonts.google.com/specimen/Gugi?preview.text=%ED%99%88&preview.text_type=custom&subset=korean#about
+ 
+ 
+ Copyright (c) image
+ 
+ https://www.pexels.com/ko-kr/photo/1639563/
+ https://www.pexels.com/ko-kr/photo/1086584/
+ https://www.pexels.com/ko-kr/photo/2940654/
+ https://www.pexels.com/ko-kr/photo/1674049/
  -->
