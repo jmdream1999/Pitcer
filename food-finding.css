@@ -3,6 +3,8 @@ body {
     background-color: #ffffff;
     box-sizing: border-box;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 .file-upload {
@@ -550,10 +552,11 @@ Treehouse Styling
 
 body {
     font-size: 1rem;
-    margin: 0;
     font: Bold;
     background: url('https://i.postimg.cc/Vv27YPy4/pexels-lukas-1410141.jpg') top center no-repeat;
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 .header {
