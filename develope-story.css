@@ -9,6 +9,9 @@ header .carousel-inner .item {
 .navbar-inverse {
     background-color: transparent;
     border-color: transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    text-decoration-line: none;
 }
 
 .navbar-inverse .navbar-brand {
@@ -25,14 +28,6 @@ header .carousel-inner .item {
 .navbar-inverse .navbar-nav>li>a {
     color: #fff;
     text-transform: uppercase;
-}
-
-.banner {
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .carousel-caption {
@@ -60,7 +55,6 @@ header .carousel-inner .item {
     font-size: 2rem;
     color: #fff;
     text-transform: uppercase;
-    border-radius: 1rem;
 }
 
 .carousel-control.right {
@@ -113,19 +107,18 @@ header .carousel-inner .item {
 BODY {
     background: #282931;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Varela Round', sans-serif;
     height: 100%;
+    text-decoration-line: none;
 }
 
 h1 {
-    line-height: 72px;
+    font-family: 'MuseoModerno', cursive;
     margin: 24px 0;
     color: white;
 }
 
 h3 {
     color: #fc3565;
-    line-height: 24px;
     margin: 24px 0;
 }
 
@@ -138,10 +131,19 @@ h6 span {
     line-height: 12px;
 }
 
+h99 {
+    margin: 24px 0;
+    color: white;
+    font-size: 10rem;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
 p {
     line-height: 24px;
     margin: 24px 0;
     color: #bbbbc4;
+    text-decoration-line: none;
 }
 
 a {
@@ -153,11 +155,12 @@ a {
     -webkit-transition: .5s;
     transition: .5s;
     cursor: pointer;
-    border-bottom: 1px groove #fc3565;
+    text-decoration-line: none;
 }
 
 a:hover {
     color: #fc3565;
+    text-decoration-line: none;
 }
 
 .columns {
@@ -166,6 +169,7 @@ a:hover {
 
 .columns:hover {
     background: #2e2f35;
+    text-decoration-line: none;
 }
 
 .teaser {
@@ -173,15 +177,14 @@ a:hover {
 }
 
 .featured {
-    background: url(https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb);
+    background: url('https://images.unsplash.com/photo-1454165205744-3b78555e5572?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
     background-repeat: no-repeat;
     background-position: -32px -202px;
     height: 250px;
-    background-
 }
 
 .iTwo {
-    background: url(https://images.unsplash.com/photo-1472437774355-71ab6752b434?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb);
+    background: url('https://images.unsplash.com/photo-1472437774355-71ab6752b434?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb');
 }
 
 .iThree {

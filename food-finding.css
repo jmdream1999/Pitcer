@@ -1,18 +1,118 @@
 body {
-    font-family: 'Do Hyeon', sans-serif;
-    background-color: #ffffff;
-    box-sizing: border-box;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
+    font-family: 'Gugi', cursive;
+    overflow: hidden
 }
 
+header .carousel-inner .item {
+    height: 100%;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    text-decoration-line: none;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 3.5rem;
+    padding: 3rem 15px;
+    font-weight: 900;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin: 25px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: ;
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+    font-family: poppins;
+}
+
+.carousel-caption h2 {
+    color: #d62879;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption h2 span {
+    color: #fcfaf6;
+}
+
+.carousel-caption a {
+    text-decoration-line: none;
+    background: #EDBB00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    background-color: #EDBB00;
+    border-color: #EDBB00;
+}
+
+
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 30px;
+        padding: 20px 15px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-caption {
+        padding-bottom: 120px;
+    }
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+}
+
+
+}
 .file-upload {
     padding: 5% 3%;
     margin: 0 auto;
     border-radius: 10px;
 }
-
 .file-upload-btn {
     width: 100%;
     margin: 0;
@@ -27,30 +127,25 @@ body {
     text-transform: uppercase;
     font-weight: 700;
 }
-
 .file-upload-btn:hover {
     background: #1AA059;
     color: #ffffff;
     transition: all .2s ease;
     cursor: pointer;
 }
-
 .file-upload-btn:active {
     border: 0;
     transition: all .2s ease;
 }
-
 .file-upload-content {
     display: none;
     text-align: center;
 }
-
 #loading {
     display: none;
     color: #d8531e;
     font-weight: 900;
 }
-
 .file-upload-input {
     position: absolute;
     margin: 0;
@@ -61,56 +156,41 @@ body {
     opacity: 0;
     cursor: pointer;
 }
-
 .image-upload-wrap {
-    width: 60%;
-    height: 0%;
+    width: 40rem;
+    height: 30rem;
     margin: 0 auto;
     position: relative;
     object-fit: contain;
     border-radius: 10px;
     border: dashed 1.5px #35465d;
-    background-image: url(https://i.postimg.cc/0jpsRfF6/pexels-laura-james-6101974.jpg);
+    background-image: url(https://i.postimg.cc/nzGY97m6/pexels-laura-james-6101974.jpg);
 }
-
 .image-dropping,
 .image-upload-wrap:hover {}
-
 .image-title-wrap {
     padding: 0 15px 15px 15px;
     color: #222;
 }
-
 .drag-text {
     text-align: center;
 }
-
-.drag-text h2 {
-    font-size: 2rem;
-    text-transform: uppercase;
-    color: #207fd1;
-}
-
-.drag-text h6 {
+h99 {
     font-size: 1rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #24268a;
+    text-align: center;
+    color: #ffffff;
 }
-
 .file-upload-image {
     max-height: 60%;
     max-width: 60%;
     margin: auto;
     padding: 10px;
 }
-
 .try-again-btn {
     border-radius: 2rem;
     border: solid 1.5px #35465d;
     background-color: #35465d;
 }
-
 .try-again-text {
     display: block;
     font-size: 1.5rem;
@@ -118,58 +198,32 @@ body {
     color: #ffffff;
     padding: 4px 15px;
 }
-
 .remove-image:hover {
     background: #c13b2a;
     color: #ffffff;
     transition: all .2s ease;
     cursor: pointer;
 }
-
 .remove-image:active {
     border: 0;
     transition: all .2s ease;
 }
-
-.navbar-light .navbar-brand {
-    line-height: 1.68;
-    text-align: left;
-    color: #35465d;
-}
-
-.navbar-light .navbar-toggler {
-    border-color: #ffffff;
-}
-
 .section {
     margin-top: 50px;
 }
-
 .title {
     line-height: 1.67;
     text-align: center;
     color: rgb(212, 27, 135);
     font-size: 5rem;
 }
-
 .subtitle {
     line-height: 1.53;
     text-align: center;
     color: #4d1010
 }
 
-
 /* On screens that are 600px or less, set the background color to olive */
-
-@media screen and (min-width: 76px) and (max-width: 1px) {
-    html {
-        font-size: 10px;
-    }
-    .navbar-brand {
-        font-size: 2rem;
-    }
-}
-
 .youtube-link {
     font-size: 10px;
     line-height: 1.71;
@@ -177,7 +231,6 @@ body {
     color: #f73737;
     text-decoration: underline;
 }
-
 .youtube-link:hover {
     font-size: 10px;
     line-height: 1.71;
@@ -185,16 +238,13 @@ body {
     color: #f73737;
     text-decoration: underline;
 }
-
 .youtube-icon {
     width: 30px;
     height: 27.262px;
 }
-
 .upload {
     width: 20%;
 }
-
 .upload-text {
     width: 58%;
     font-size: 1.5rem;
@@ -203,241 +253,192 @@ body {
     color: #35465d;
     margin: 0 auto;
 }
-
 .footer {
     background-color: initial;
     color: initial;
 }
-
 .bar-container {
     height: 2.7rem;
 }
-
 .animal-label {
     width: 20%;
     text-align: left;
     height: 2rem;
 }
-
 #label-container {
     width: 80%;
     margin: 0 auto;
 }
-
 .result-message {
     font-size: 2rem;
 }
 
-
 /* 한국음식 리스트 START */
-
 .김밥-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .김밥-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .곤드레밥-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .곤드레밥-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .비빔밥-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .비빔밥-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .볶음밥-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .볶음밥-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .덮밥-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .덮밥-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .컵밥-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .컵밥-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .삼계죽-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .삼계죽-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .전복죽-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .전복죽-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .팥죽-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .팥죽-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .호박죽-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .호박죽-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .밥버거-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .밥버거-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .고기국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .고기국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .김치말이국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .김치말이국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .닭칼국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .닭칼국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .막국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .막국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .비빔국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .비빔국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .잔치국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .잔치국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .초계국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .초계국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .칼국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .칼국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
-
 .콩국수-food-title {
     color: #fc5184;
     font-size: 35px;
 }
-
 .콩국수-food-celeb {
     color: #5a51fc;
     font-size: 25px;
 }
 
-
 /* gender */
-
 input#gender {
     display: none;
 }
-
 label {
     cursor: pointer;
     display: inline-block;
@@ -447,7 +448,6 @@ label {
     border-radius: 30px;
     position: relative;
 }
-
 .knob {
     position: absolute;
     width: 41px;
@@ -459,7 +459,6 @@ label {
     background-color: #fbd4e6;
     transition: 0.3s;
 }
-
 .knob>i {
     position: absolute;
     width: 4px;
@@ -468,7 +467,6 @@ label {
     background-color: #f470a7;
     left: calc(50% - 2px);
 }
-
 .knob>i:before,
 .knob>i:after {
     width: 6px;
@@ -478,37 +476,30 @@ label {
     height: 4px;
     background-color: #f470a7;
 }
-
 .knob>i:before {
     left: 4px;
 }
-
 .knob>i:after {
     left: -6px;
 }
-
 input:checked+label>.knob {
     box-shadow: 0 0 0 8px #a1c6dd inset;
     background-color: #e2ecf4;
     transform: translateX(49px) rotate(-140deg);
 }
-
 input:checked+label>.knob>i {
     background-color: #a1c6dd;
 }
-
 input:checked+label>.knob>i:after,
 input:checked+label>.knob>i:before {
     background-color: #a1c6dd;
 }
-
 input:checked+label>.knob>i:after {
     top: 14.5px;
     width: 12px;
     left: -7px;
     transform: rotate(45deg);
 }
-
 input:checked+label>.knob>i:before {
     top: 13px;
     width: 12px;
@@ -516,109 +507,26 @@ input:checked+label>.knob>i:before {
     transform: rotate(134deg);
 }
 
-.ad-banner {
-    width: 728px;
-    margin: 0 auto;
-}
-
-
 /******************************
 Flexbox Layout
 *******************************/
 
-.header,
-.nav {
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    flex-direction: column;
-}
-
-.header {
-    justify-content: space-between;
-}
-
-.nav {
-    -webkit-flex: 1;
-    flex: 1;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
-}
-
-
 /******************************
 Treehouse Styling
 *******************************/
-
 body {
     font-size: 1rem;
     font: Bold;
-    background: url('https://i.postimg.cc/Vv27YPy4/pexels-lukas-1410141.jpg') top center no-repeat;
+    background: #000000;
     background-size: cover;
     margin: 0;
     padding: 0;
 }
-
-.header {
-    padding: 20px 0;
-    margin: 0 auto;
-}
-
-.logo {
-    width: 195px;
-    background-size: contain;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
-.nav {
-    list-style: none;
-}
-
-.nav li {
-    margin: 15px 0 12px 28px;
-}
-
-.navbar-brand:hover {
-    color: #ffffff;
-}
-
-.navbar-brand {
-    color: #000000;
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 3rem;
-    margin-top: -1rem;
-    font-weight: 900;
-}
-
-.nav li a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    text-transform: uppercase;
-}
-
-.nav li a:hover {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.nav li:last-child a {
-    border-radius: 2px;
-    transition: 200ms ease-in-out;
-}
-
-.nav li:last-child a:hover {
-    background: rgba(255, 255, 255, 0.5);
-    color: #fff;
-}
-
 .sigh {
     font-size: 1rem;
     text-align: center;
     color: #000000;
 }
-
 
 /* Copyright (c) image
 
