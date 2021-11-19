@@ -178,249 +178,259 @@ git push -u origin master
                          ></div>
                      </div>
                  </div>
+                
+                 
+
+                 <div class="pt-3 image-title-wrap" style="text-align: center;">
+					<button 
+						type="button p-2"
+						class="try-again-btn"
+						onclick="window.location.reload();"
+					>
+						<span class="try-again-text">Try again with another one</span>
+					</button>
+			
  
                  <div style="padding: 2rem;"></div>
  
-                 <div href="사이트주소" id="banner" div style="text-align: center;">
-                     <img src=".\media\banner.png" />
-                     <div style="padding: 10px 10px 10px 10px;"></div>
-                     <h99>© JMDREAM 2021. All Rights Reserved.</h99>
-                     <div style="padding: 10px 10px 10px 10px;"></div>
-                 </div>
- 
-                 <script>
-                     function readURL(input) {
-                         if (input.files && input.files[0]) {
-                             var reader = new FileReader();
-                             reader.onload = function (e) {
-                                 $('.image-upload-wrap').hide();
-                                 $('#loading').show();
-                                 $('.file-upload-image').attr('src', e.target.result);
-                                 $('.file-upload-content').show();
-                                 $('.image-title').html(input.files[0].name);
-                             };
-                             reader.readAsDataURL(input.files[0]);
-                             init().then(function () {
-                                 console.log('hello');
-                                 predict();
-                                 $('#loading').hide();
-                             });
-                         } else {
-                             removeUpload();
-                         }
-                     }
- 
-                     function removeUpload() {
-                         $('.file-upload-input').replaceWith($('.file-upload-input').clone());
-                         $('.file-upload-content').hide();
-                         $('.image-upload-wrap').show();
-                     }
-                     $('.image-upload-wrap').bind('dragover', function () {
-                         $('.image-upload-wrap').addClass('image-dropping');
-                     });
-                     $('.image-upload-wrap').bind('dragleave', function () {
-                         $('.image-upload-wrap').removeClass('image-dropping');
-                     });
-                 </script>
-                 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
-                 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
-                 <script type="text/javascript">
-                     // More API functions here:
-                     // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
-                     // the link to your model provided by Teachable Machine export panel
-                     const URL = 'https://teachablemachine.withgoogle.com/models/uK-e_h2c6/';
-                     let model, webcam, labelContainer, maxPredictions;
-                     // Load the image model and setup the webcam
-                     async function init() {
-                         const modelURL = URL + 'model.json';
-                         const metadataURL = URL + 'metadata.json';
-                         // load the model and metadata
-                         // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
-                         // or files from your local hard drive
-                         // Note: the pose library adds "tmImage" object to your window (window.tmImage)
-                         model = await tmImage.load(modelURL, metadataURL);
-                         maxPredictions = model.getTotalClasses();
-                         // append elements to the DOM
-                         labelContainer = document.getElementById('label-container');
-                         for (let i = 0; i < maxPredictions; i++) {
-                             // and class labels
-                             labelContainer.appendChild(document.createElement('div'));
-                         }
-                     }
-                     // run the webcam image through the image model
-                     async function predict() {
-                         var image = document.getElementById('dog-image');
-                         const prediction = await model.predict(image, false);
-                         prediction.sort(
-                             (a, b) => parseFloat(b.probability) - parseFloat(a.probability)
-                         );
-                         console.log(prediction[0].className);
-                         var resultTitle, resultExplain, resultCeleb;
-                         switch (prediction[0].className) {
-                             // 한국음식 리스트 START
- 
-                             case '김밥':
-                                 resultTitle = 'Gimbap(김밥)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '곤드레밥':
-                                 resultTitle = 'Gondeure-bap(곤드레밥)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '비빔밥':
-                                 resultTitle = 'Bibim-bap(비빔밥)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '볶음밥':
-                                 resultTitle = 'Fried rice';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Unknown';
-                                 break;
-                             case '덮밥':
-                                 resultTitle = 'Rice with toppings';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Unknown';
-                                 break;
-                             case '컵밥':
-                                 resultTitle = 'Cup rice';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '삼계죽':
-                                 resultTitle = 'Samgye-juk(삼계죽)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Unknown';
-                                 break;
-                             case '전복죽':
-                                 resultTitle = 'Jeonbok-juk(전복죽)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '팥죽':
-                                 resultTitle = 'Pat-juk(팥죽)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Unknown';
-                                 break;
-                             case '호박죽':
-                                 resultTitle = 'Hobak-juk(호박죽)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '밥버거':
-                                 resultTitle = 'Rice burger';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '고기국수':
-                                 resultTitle = 'Gogiguksu(고기국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '김치말이국수':
-                                 resultTitle = 'Kimchimariguksu(김치말이국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '닭칼국수':
-                                 resultTitle = 'Dakkalguksu(닭칼국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '막국수':
-                                 resultTitle = 'Makguksu(막국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '비빔국수':
-                                 resultTitle = 'Bibimguksu(비빔국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '잔치국수':
-                                 resultTitle = 'Janchiguksu(잔치국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '초계국수':
-                                 resultTitle = 'Chogyeguksu(초계국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '칼국수':
-                                 resultTitle = 'Kalguksu(칼국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
-                             case '콩국수':
-                                 resultTitle = 'Kongguksu(콩국수)';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
- 
-                             // 한국음식 리스트 END
- 
-                             case '':
-                                 resultTitle = '';
-                                 resultExplain = '';
-                                 resultCeleb = 'Country of origin: Republic of Korea';
-                                 break;
- 
-                             default:
-                                 resultTitle = 'Unrecognizable';
-                                 resultExplain = 'Please post the exact picture';
-                                 resultCeleb = '';
-                         }
-                         //     }
-                         var title =
-                             "<div class='" +
-                             prediction[0].className +
-                             "-food-title'>" +
-                             resultTitle +
-                             '</div>';
-                         var explain = "<div class='food-explain pt-2'>" + resultExplain + '</div>';
-                         var celeb =
-                             "<div class='" +
-                             prediction[0].className +
-                             "-food-celeb pt-2 pb-2'>" +
-                             resultCeleb +
-                             '</div>';
-                         $('.result-message').html(title + explain + celeb);
-                     }
-                 </script>
- 
-                 <script>
-                     function iosApp() {
-                         document.getElementById('').style.display = 'none';
-                         $('# ins').hide();
-                         document.getElementById('addThis').style.display = 'none';
-                         document.getElementById('disqus_thread').style.display = 'none';
-                         var = document.getElementsByClassName('');
-                         for (var i = 0; i < ; i++) {
-                             if ([i]) {
-                                 [i].style.display = 'none';
-                             }
-                         }
-                     }
-                 </script>
- 
-                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                 <script
-                     type="text/javascript"
-                     src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-619526da5505a7b7"
-                 ></script>
-             </body>
-         </div>
- 
-         <div style="position: fixed; bottom: 1rem; right: 2%;" ;>
-             <a href="#" class="btn_gotop">
-                 <h99 style="color: #fc3565;" font size="+10000"> &#8686;</h99>
-             </a>
+                 <div href="사이트주소" id="banner" div style="text-align: center;" style="max-width:100%; height:auto;">
+                    <a target="_blank" href="●"><img src=".\media\banner.png" style="max-width:100%; height:auto;"></a>
+
+
+
+
+                            <div style="padding: 10px 10px 10px 10px;"></div>
+                            <h99>© JMDREAM 2021. All Rights Reserved.</h99>
+                            <div style="padding: 10px 10px 10px 10px;"></div>
                 </div>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+                <script>
+                    function readURL(input) {
+                        if (input.files && input.files[0]) {
+                            var reader = new FileReader();
+                            reader.onload = function(e) {
+                                $('.image-upload-wrap').hide();
+                                $('#loading').show();
+                                $('.file-upload-image').attr('src', e.target.result);
+                                $('.file-upload-content').show();
+                                $('.image-title').html(input.files[0].name);
+                            };
+                            reader.readAsDataURL(input.files[0]);
+                            init().then(function() {
+                                console.log('hello');
+                                predict();
+                                $('#loading').hide();
+                            });
+                        } else {
+                            removeUpload();
+                        }
+                    }
+
+                    function removeUpload() {
+                        $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+                        $('.file-upload-content').hide();
+                        $('.image-upload-wrap').show();
+                    }
+                    $('.image-upload-wrap').bind('dragover', function() {
+                        $('.image-upload-wrap').addClass('image-dropping');
+                    });
+                    $('.image-upload-wrap').bind('dragleave', function() {
+                        $('.image-upload-wrap').removeClass('image-dropping');
+                    });
+                </script>
+                <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+                <script type="text/javascript">
+                    // More API functions here:
+                    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+                    // the link to your model provided by Teachable Machine export panel
+                    const URL = 'https://teachablemachine.withgoogle.com/models/uK-e_h2c6/';
+                    let model, webcam, labelContainer, maxPredictions;
+                    // Load the image model and setup the webcam
+                    async function init() {
+                        const modelURL = URL + 'model.json';
+                        const metadataURL = URL + 'metadata.json';
+                        // load the model and metadata
+                        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+                        // or files from your local hard drive
+                        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+                        model = await tmImage.load(modelURL, metadataURL);
+                        maxPredictions = model.getTotalClasses();
+                        // append elements to the DOM
+                        labelContainer = document.getElementById('label-container');
+                        for (let i = 0; i < maxPredictions; i++) {
+                            // and class labels
+                            labelContainer.appendChild(document.createElement('div'));
+                        }
+                    }
+                    // run the webcam image through the image model
+                    async function predict() {
+                        var image = document.getElementById('dog-image');
+                        const prediction = await model.predict(image, false);
+                        prediction.sort(
+                            (a, b) => parseFloat(b.probability) - parseFloat(a.probability)
+                        );
+                        console.log(prediction[0].className);
+                        var resultTitle, resultExplain, resultCeleb;
+                        switch (prediction[0].className) {
+                            // 한국음식 리스트 START
+
+                            case '김밥':
+                                resultTitle = 'Gimbap(김밥)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '곤드레밥':
+                                resultTitle = 'Gondeure-bap(곤드레밥)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '비빔밥':
+                                resultTitle = 'Bibim-bap(비빔밥)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '볶음밥':
+                                resultTitle = 'Fried rice';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Unknown';
+                                break;
+                            case '덮밥':
+                                resultTitle = 'Rice with toppings';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Unknown';
+                                break;
+                            case '컵밥':
+                                resultTitle = 'Cup rice';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '삼계죽':
+                                resultTitle = 'Samgye-juk(삼계죽)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Unknown';
+                                break;
+                            case '전복죽':
+                                resultTitle = 'Jeonbok-juk(전복죽)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '팥죽':
+                                resultTitle = 'Pat-juk(팥죽)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Unknown';
+                                break;
+                            case '호박죽':
+                                resultTitle = 'Hobak-juk(호박죽)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '밥버거':
+                                resultTitle = 'Rice burger';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '고기국수':
+                                resultTitle = 'Gogiguksu(고기국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '김치말이국수':
+                                resultTitle = 'Kimchimariguksu(김치말이국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '닭칼국수':
+                                resultTitle = 'Dakkalguksu(닭칼국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '막국수':
+                                resultTitle = 'Makguksu(막국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '비빔국수':
+                                resultTitle = 'Bibimguksu(비빔국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '잔치국수':
+                                resultTitle = 'Janchiguksu(잔치국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '초계국수':
+                                resultTitle = 'Chogyeguksu(초계국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '칼국수':
+                                resultTitle = 'Kalguksu(칼국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+                            case '콩국수':
+                                resultTitle = 'Kongguksu(콩국수)';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+
+                                // 한국음식 리스트 END
+
+                            case '':
+                                resultTitle = '';
+                                resultExplain = '';
+                                resultCeleb = 'Country of origin: Republic of Korea';
+                                break;
+
+                            default:
+                                resultTitle = 'Unrecognizable';
+                                resultExplain = 'Please post the exact picture';
+                                resultCeleb = '';
+                        }
+                        //     }
+                        var title =
+                            "<div class='" +
+                            prediction[0].className +
+                            "-food-title'>" +
+                            resultTitle +
+                            '</div>';
+                        var explain = "<div class='food-explain pt-2'>" + resultExplain + '</div>';
+                        var celeb =
+                            "<div class='" +
+                            prediction[0].className +
+                            "-food-celeb pt-2 pb-2'>" +
+                            resultCeleb +
+                            '</div>';
+                        $('.result-message').html(title + explain + celeb);
+                    }
+                </script>
+
+                <script>
+                    function iosApp() {
+                        document.getElementById('').style.display = 'none';
+                        $('# ins').hide();
+                        document.getElementById('addThis').style.display = 'none';
+                        document.getElementById('disqus_thread').style.display = 'none';
+                        var = document.getElementsByClassName('');
+                        for (var i = 0; i < ; i++) {
+                            if ([i]) {
+                                [i].style.display = 'none';
+                            }
+                        }
+                    }
+                </script>
+
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-619526da5505a7b7"></script>
+</body>
+</div>
+
+</a>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

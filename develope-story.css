@@ -2,6 +2,10 @@ body {
     font-family: 'Gugi', cursive;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header .carousel-inner .item {
     height: 100%;
 }
