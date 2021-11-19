@@ -20,6 +20,15 @@ git push -u origin master
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mina&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -154,6 +163,7 @@ git push -u origin master
                              <h2 class="mb-5 pb-5 pt-4 upload-text">
                                  Please post a picture of the food
                              </h2>
+                             <div style="padding: 10rem;"></div>
                              <h6>
                                  ( If it's the front photo, the recognition rate increases )
                              </h6>
@@ -162,16 +172,25 @@ git push -u origin master
                              </h3>
                          </div>
                      </div>
-                     <div class="file-upload-content">
-                         <img class="file-upload-image" id="dog-image" src="#" alt="your image" />
+                     <div style="padding: 2rem;"></div>
+                        
+                       <div class="file-upload-content">
+                        <img class="file-upload-image" id="food-image" src="#" alt="your image" />
                          <p class="result-message"></p>
+                         
                          <div id="loading" class="animated bounce">
                              <div class="spinner-border" role="status">
+                               
                                  <span class="sr-only">Loading...</span>
                              </div>
-                             <p class="text-center">Looking for food...</p>
-                         </div>
- 
+                             <button class="btn btn-primary" type="button" disabled>
+                                 
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                              </button>
+
+                              
+  <div style="padding: 2rem;"></div>
                          <div
                              id="label-container"
                              class="d-flex flex-column justify-content-around"
@@ -265,7 +284,7 @@ git push -u origin master
                     }
                     // run the webcam image through the image model
                     async function predict() {
-                        var image = document.getElementById('dog-image');
+                        var image = document.getElementById('food-image');
                         const prediction = await model.predict(image, false);
                         prediction.sort(
                             (a, b) => parseFloat(b.probability) - parseFloat(a.probability)
@@ -469,7 +488,9 @@ git push -u origin master
  Copyright (c) font 
    
  https://fonts.google.com/specimen/Gugi?preview.text=%ED%99%88&preview.text_type=custom&subset=korean#about
-   
+ https://fonts.google.com/specimen/Nova+Square?preview.text=Food&preview.text_type=custom&query=nova
+ https://fonts.google.com/specimen/Mina?preview.text=Food&preview.text_type=custom
+ https://fonts.google.com/specimen/Do+Hyeon?subset=korean&query=Do+h
    
   Copyright (c) image
    

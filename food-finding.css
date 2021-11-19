@@ -1,5 +1,14 @@
 body {
     font-family: 'Gugi', cursive;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Gugi', cursive;
 }
 
 ::-webkit-scrollbar {
@@ -147,11 +156,15 @@ header .carousel-inner .item {
     text-align: center;
 }
 
-#loading {
-    font-size: 10rem;
-    display: none;
-    color: #d8531e;
-    font-weight: 900;
+.btn {
+    position: center;
+    color: #ffffff;
+    font-family: ;
+    font-size: 3rem;
+}
+
+.btn-primary {
+    color: #ffffff;
 }
 
 .file-upload-input {
@@ -172,7 +185,7 @@ header .carousel-inner .item {
     position: relative;
     object-fit: contain;
     border-radius: 10px;
-    border: dashed 1.5px #35465d;
+    border: dashed 0px;
     background-image: url(https://i.postimg.cc/nzGY97m6/pexels-laura-james-6101974.jpg);
 }
 
@@ -186,16 +199,20 @@ header .carousel-inner .item {
 }
 
 .drag-text h2 {
+    font-family: sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-    color: #207fd1;
+    color: #ee00da;
+    font-weight: 500;
 }
 
 .drag-text h6 {
-    font-size: 1rem;
-    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 10rem;
     text-transform: uppercase;
-    color: #24268a;
+    color: #000000;
 }
 
 h99 {
@@ -213,17 +230,16 @@ h99 {
 
 .try-again-btn {
     border-radius: 2rem;
-    border: solid 1.5px #1f67c4;
-    background-color: #35465d;
-    box-align: right;
-    margin: auto;
+    border: solid 1.5px #e7cc53;
+    background-color: #e7cc53;
+    margin: 0;
 }
 
 .try-again-text {
     display: block;
     font-size: 1.5rem;
-    color: #ffffff;
-    padding: 4px 15px;
+    color: #000000;
+    padding: 1rem 1rem;
 }
 
 .remove-image:hover {
@@ -243,16 +259,17 @@ h99 {
 }
 
 .title {
-    line-height: 1.67;
+    font-family: 'Nova Square', cursive;
     text-align: center;
-    color: rgb(212, 27, 135);
-    font-size: 5rem;
+    color: #e43093;
+    font-size: 9rem;
 }
 
 .subtitle {
-    line-height: 1.53;
+    font-family: 'Mina', sans-serif;
+    font-size: 3rem;
     text-align: center;
-    color: #4d1010
+    color: #ffffff
 }
 
 
@@ -301,12 +318,6 @@ h99 {
     height: 2.7rem;
 }
 
-.animal-label {
-    width: 20%;
-    text-align: left;
-    height: 2rem;
-}
-
 #label-container {
     width: 80%;
     margin: 0 auto;
@@ -319,202 +330,14 @@ h99 {
 
 /* 한국음식 리스트 START */
 
-.김밥-food-title {
+element class=.classname-food-title {
+    font-family: 'Do Hyeon', sans-serif;
     color: #fc5184;
     font-size: 35px;
 }
 
-.김밥-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.곤드레밥-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.곤드레밥-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.비빔밥-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.비빔밥-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.볶음밥-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.볶음밥-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.덮밥-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.덮밥-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.컵밥-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.컵밥-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.삼계죽-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.삼계죽-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.전복죽-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.전복죽-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.팥죽-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.팥죽-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.호박죽-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.호박죽-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.밥버거-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.밥버거-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.고기국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.고기국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.김치말이국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.김치말이국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.닭칼국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.닭칼국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.막국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.막국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.비빔국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.비빔국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.잔치국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.잔치국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.초계국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.초계국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.칼국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.칼국수-food-celeb {
-    color: #5a51fc;
-    font-size: 25px;
-}
-
-.콩국수-food-title {
-    color: #fc5184;
-    font-size: 35px;
-}
-
-.콩국수-food-celeb {
+food-celeb {
+    font-family: 'Do Hyeon', sans-serif;
     color: #5a51fc;
     font-size: 25px;
 }
@@ -621,6 +444,7 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .sigh {
