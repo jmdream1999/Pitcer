@@ -1,0 +1,460 @@
+body {
+    font-family: 'Gugi', cursive;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Gugi', cursive;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header .carousel-inner .item {
+    height: 100%;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border-color: transparent;
+    position: -webkit-sticky;
+    position: sticky;
+    text-decoration-line: none;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 4rem;
+    padding: 40px 15px;
+    font-weight: 900;
+}
+
+.nav.navbar-nav.navbar-right {
+    margin: 25px 0;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.carousel-caption {
+    padding-bottom: 250px;
+    font-family: poppins;
+}
+
+.carousel-caption h2 {
+    color: #d62879;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.carousel-caption h2 span {
+    color: #fcfaf6;
+}
+
+.carousel-caption a {
+    text-decoration-line: none;
+    background: #EDBB00;
+    padding: 15px 35px;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.carousel-indicators .active {
+    background-color: #EDBB00;
+    border-color: #EDBB00;
+}
+
+
+/*responsive css*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .carousel-caption {
+        padding-bottom: 350px;
+    }
+    .carousel-caption h2 {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 30px;
+        padding: 20px 15px;
+    }
+    .navbar-collapse {
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .carousel-caption {
+        padding-bottom: 120px;
+    }
+    .carousel-caption h2 {
+        font-size: 25px;
+    }
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+    .carousel-caption a {
+        padding: 10px 25px;
+    }
+}
+
+.file-upload {
+    padding: 5% 3%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.file-upload-btn {
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    background: #1FB264;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom: 4px solid #15824B;
+    transition: all .2s ease;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.file-upload-btn:hover {
+    background: #1AA059;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.file-upload-btn:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.file-upload-content {
+    display: none;
+    text-align: center;
+}
+
+.btn {
+    position: center;
+    color: #ffffff;
+    font-family: ;
+    font-size: 3rem;
+}
+
+.btn-primary {
+    color: #ffffff;
+}
+
+.file-upload-input {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.image-upload-wrap {
+    width: 40rem;
+    height: 30rem;
+    margin: 0 auto;
+    position: relative;
+    object-fit: contain;
+    border-radius: 10px;
+    border: dashed 0px;
+    background-image: url(https://i.postimg.cc/nzGY97m6/pexels-laura-james-6101974.jpg);
+}
+
+.image-title-wrap {
+    padding: 0 15px 15px 15px;
+    color: #222;
+}
+
+.drag-text {
+    text-align: center;
+}
+
+.drag-text h2 {
+    font-family: sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ee00da;
+    font-weight: 500;
+}
+
+.drag-text h6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+h99 {
+    font-size: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.file-upload-image {
+    max-height: 60%;
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+.try-again-btn {
+    border-radius: 2rem;
+    border: solid 1.5px #e7cc53;
+    background-color: #e7cc53;
+    margin: 0;
+}
+
+.try-again-text {
+    display: block;
+    font-size: 1.5rem;
+    color: #000000;
+    padding: 1rem 1rem;
+}
+
+.remove-image:hover {
+    background: #c13b2a;
+    color: #ffffff;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.remove-image:active {
+    border: 0;
+    transition: all .2s ease;
+}
+
+.section {
+    margin-top: 50px;
+}
+
+.title {
+    font-family: 'Nova Square', cursive;
+    text-align: center;
+    color: #e43093;
+    font-size: 9rem;
+}
+
+.subtitle {
+    font-family: 'Mina', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+
+.youtube-link {
+    font-size: 10px;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+
+.youtube-link:hover {
+    font-size: 10px;
+    line-height: 1.71;
+    text-align: center;
+    color: #f73737;
+    text-decoration: underline;
+}
+
+.youtube-icon {
+    width: 30px;
+    height: 27.262px;
+}
+
+.upload {
+    width: 20%;
+}
+
+.upload-text {
+    width: 58%;
+    font-size: 1.5rem;
+    line-height: 1.53;
+    text-align: center;
+    color: #35465d;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: initial;
+    color: initial;
+}
+
+.bar-container {
+    height: 2.7rem;
+}
+
+#label-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.result-message {
+    font-size: 2rem;
+}
+
+
+/* 한국음식 리스트 START */
+
+element class=.classname-food-title {
+    font-family: 'Do Hyeon', sans-serif;
+    color: #fc5184;
+    font-size: 35px;
+}
+
+food-celeb {
+    font-family: 'Do Hyeon', sans-serif;
+    color: #5a51fc;
+    font-size: 25px;
+}
+
+
+/* gender */
+
+input#gender {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    display: inline-block;
+    width: 90px;
+    height: 41px;
+    box-shadow: 0 0 0 8px #e5e9ea inset;
+    border-radius: 30px;
+    position: relative;
+}
+
+.knob {
+    position: absolute;
+    width: 41px;
+    top: 0;
+    left: 0;
+    height: 41px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px #f470a7 inset;
+    background-color: #fbd4e6;
+    transition: 0.3s;
+}
+
+.knob>i {
+    position: absolute;
+    width: 4px;
+    height: 18px;
+    top: 100%;
+    background-color: #f470a7;
+    left: calc(50% - 2px);
+}
+
+.knob>i:before,
+.knob>i:after {
+    width: 6px;
+    position: absolute;
+    top: 42%;
+    content: "";
+    height: 4px;
+    background-color: #f470a7;
+}
+
+.knob>i:before {
+    left: 4px;
+}
+
+.knob>i:after {
+    left: -6px;
+}
+
+input:checked+label>.knob {
+    box-shadow: 0 0 0 8px #a1c6dd inset;
+    background-color: #e2ecf4;
+    transform: translateX(49px) rotate(-140deg);
+}
+
+input:checked+label>.knob>i {
+    background-color: #a1c6dd;
+}
+
+input:checked+label>.knob>i:after,
+input:checked+label>.knob>i:before {
+    background-color: #a1c6dd;
+}
+
+input:checked+label>.knob>i:after {
+    top: 14.5px;
+    width: 12px;
+    left: -7px;
+    transform: rotate(45deg);
+}
+
+input:checked+label>.knob>i:before {
+    top: 13px;
+    width: 12px;
+    left: 0px;
+    transform: rotate(134deg);
+}
+
+
+/******************************
+Flexbox Layout
+*******************************/
+
+
+/******************************
+Treehouse Styling
+*******************************/
+
+body {
+    font-size: 1rem;
+    font: Bold;
+    background: #000000;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.sigh {
+    font-size: 1rem;
+    text-align: center;
+    color: #000000;
+}
+
+
+/* Copyright (c) image
+
+https://www.pexels.com/ko-kr/photo/1410141/
+https://www.pexels.com/ko-kr/photo/6101974/
